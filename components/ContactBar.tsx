@@ -16,7 +16,7 @@ import classNames from "classnames";
 
 export default function ContactBar() {
   return (
-    <div className="bg-bgPrimary rounded-xl flex items-start flex-col h-full hover:brightness-110 transition-all duration-200 ease-in-out relative">
+    <div className="bg-bgPrimary rounded-xl flex items-start flex-col hover:brightness-110 transition-all duration-200 ease-in-out relative h-[280px]">
       <div
         className={classNames(
           "absolute top-0 left-0 opacity-30 z-10 w-full h-full"

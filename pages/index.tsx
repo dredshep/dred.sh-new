@@ -13,6 +13,22 @@ import Ram2Icon from "../components/svg/Ram2Icon";
 import Link from "next/link";
 import RightAppBar from "../components/RightAppBar";
 import ContactBar from "../components/ContactBar";
+
+function ProjectPlaceholder({ title }: { title: string }) {
+  return (
+    <div className="bg-bgPrimary rounded-2xl flex flex-col justify-center items-center">
+      <div className="text-2xl font-bold my-4">{title}</div>
+      {/* image placeholder */}
+      <div className="bg-frontSecondary rounded-lg aspect-video w-full flex items-center justify-center">
+        <FontAwesomeIcon
+          icon={faDiagramProject}
+          className="w-20 text-bgPrimary"
+        />
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <div className="bg-bgSecondary text-frontSecondary min-h-screen flex flex-col gap-5 overflow-x-hidden">
@@ -39,23 +55,16 @@ export default function Home() {
               <div className="text-4xl font-bold ">dredshep</div>
               <div className="text-2xl font-bold ">Full Stack Developer</div>
             </div>
-            {/* 2 boxes side by side, 500px tall each */}
-            <div className="flex flex-row  h-96 gap-5 w-full items-stretch">
+            {/* a few project boxes with secondary background and rounded-lg */}
+            <div className="grid grid-cols-2 gap-5 w-full items-stretch">
               {/* left box */}
-              <div className="bg-bgPrimary flex-1 rounded-2xl flex flex-col justify-center items-center">
-                <div className="text-2xl font-bold ">
-                  Skills
-                  <br />
-                  overview
-                </div>
-              </div>
+              <ProjectPlaceholder title="Project Highlight 1" />
               {/* right box */}
-              <div className="bg-bgPrimary flex-1 rounded-2xl flex flex-col justify-center items-center">
-                <div className="text-2xl font-bold ">
-                  Contact
-                  <br /> summary
-                </div>
-              </div>
+              <ProjectPlaceholder title="Project Highlight 2" />
+              <ProjectPlaceholder title="Project Highlight 3" />
+              <ProjectPlaceholder title="Project Highlight 4" />
+              <ProjectPlaceholder title="Project Highlight 5" />
+              <ProjectPlaceholder title="Project Highlight 6" />
             </div>
           </div>
           {/* right app bar */}

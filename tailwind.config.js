@@ -6,11 +6,14 @@ module.exports = {
   ],
   theme: {
     colors: {
-      bgSecondary: "#273043",
+      // bgSecondary: "#273043",
+      // bgSecondary: "#303a4f",
+      bgSecondary: "#2c3547", // lighter, approved by seblaw as seen here: https://i.ibb.co/hWrJR7g/image.png
       bgPrimary: "#001228",
       accent: "#8C1919",
-      frontSecondary: "#92828D",
-      frontSecondaryOnSecondary: "#aaa",
+      // frontSecondary: "#92828D",
+      // frontSecondaryOnSecondary: "#aaa",
+      frontSecondary: "#aaa",
       frontPrimary: "#FCECC9",
     },
     fontFamily: {

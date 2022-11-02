@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function RightAppBar() {
   return (
-    <div className="flex flex-col bg-bgPrimary px-[42px] rounded-2xl w-[calc(292px)] shrink-0 relative overflow-hidden hover:brightness-110 transition-all duration-150 ease-out">
+    <div className="flex flex-col bg-bgPrimary px-[42px] rounded-2xl w-[calc(292px)] shrink-0 relative overflow-hidden hover:brightness-110 transition-all duration-150 ease-out h-[568px]">
       {/* the following image is very wide; we need it to be taller than it is wide. it is also horizontal, we need it to be vertical
 			so we need to rotate it 90 degrees clockwise, and then we need to translate it to the left by 50% of its height, and then we need to translate it down by 50% of its width*/}
 
